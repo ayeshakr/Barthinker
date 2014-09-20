@@ -1,0 +1,13 @@
+Vodka,Worcestershire Sauce,Tabasco Sauce,Horseradish Sauce,Lime Juice,Tomato Juice
+Raspberry Liqueur,Melon Liqueur,Swwet&Sour Mix,Jagermeister
+Sugar,Bourbon,Bitters
+Gin,Dry Vermouth,Olive Juice
+Rye,Sweet Vermouth,Bitters
+Light Run,Lime Juice,Sugar
+Butterscotch Schnapps,Irish Cream
+Vodka,Coffee Liqueur,Cream
+Rum,Mint Leaves,Lime Juice,Simple Syrup,Carbonated Water
+Irish Whiskey,Hot Coffee
+Tequila,Orange Juice,Grenadine
+Dark Rum,Cola,Lime juice
+Vodka,Gin,Rum,Triple Sec,Tequila,Sweet&Sour Mix,Cola
