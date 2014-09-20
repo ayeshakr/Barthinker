@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 import random
-=======
 #Give the user a list of ingredients for a mixed drink and give them 4 names of drinks to choose from
-
-=======
->>>>>>> origin/master
-#Give the user a list of ingredients for a mixed drink and give them 4 names
 #of drinks to choose from
 #Open file1, which will contain the lists of ingredients.
 #Randomly select one from file1.
@@ -17,7 +11,6 @@ import random
 #from the file1, that it is not selected again and also that the answer to the
 #corresponding list of ingredients is placed in a random order.
 
-<<<<<<< HEAD
 
 #open ingredients
 ingr = open('ingredients.txt')
@@ -38,23 +31,20 @@ for lines in names:
 #the name corresponding to these ingredients are held int the variable answer
 #Now create a list of size 4 which includes the answer and 3 wrong answers.
 #Then print the ingredients and the 4 possible answers.
+
 for line in ingr:
     rez.append(line)
-    index = randrange(8)
-    print(rez[index])
-    answer = rez2[index]
-    y = []
+
+score = 0
     
-    
-        
-
-        
-
-        
-
-
-
-        
-        
-=======
->>>>>>> origin/master
+for x in range(0,8):
+    index = random.randint(0,12-x)
+    drinks = [rez2[random.randint(0,12-x)], rez2[index], rez2[random.randint(0,12-x)], rez2[random.randint(0,12-x)]]
+    random.shuffle(drinks)
+    for i in range(0,4):
+        print(str(i+1) +  ". " + (drinks[i]))
+    guess = str(input("Guess the drink that contains these ingredients: " + rez[index]))
+    if (guess ==  rez2[index]): score = score + 1 and print ("You scored a point! Your score is now " + str(score))
+    else: print ("You got it wrong. Your score is " + str(score))
+    rez2.remove(rez2[index])
+    rez.remove(rez[index])
