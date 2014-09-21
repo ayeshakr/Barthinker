@@ -48,9 +48,13 @@ for x in range(0,8):
     drinks = [rez2[ind1], rez2[index], rez2[ind2], rez2[ind3]]
     random.shuffle(drinks)
     for i in range(0,4):
-        print(str(i+1) +  ". " + (drinks[i]))
+        print(str(i+1) + ". " + (drinks[i]))
     guess = int(input("Type in the number of the drink that contains these ingredients: " + rez[index]))
-    if (guess - 1 ==  (drinks.index(rez2[index]))): print ("You scored a point! Your score is now " + str(score))
-    else: print ("You got it wrong. Your score is " + str(score))
+    if (guess - 1 ==  (drinks.index(rez2[index]))): score = score + 1
+    print("Your score is ", score)
     rez2.remove(rez2[index])
     rez.remove(rez[index])
+
+if (score > 6): print("You are an alcoholic. Seek help immediately.")
+if ( 3 < score < 6): print("Not bad.")
+if (score < 3): print ("Were you born yesterday?")
