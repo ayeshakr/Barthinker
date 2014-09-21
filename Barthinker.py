@@ -57,4 +57,4 @@ for x in range(0,8):
 
 if (score > 6): print("You are an alcoholic. Seek help immediately.")
 if ( 3 < score < 6): print("Not bad.")
-if (score < 3): print ("Were you born yesterday?")
+if (score < 3): print ("Were you born yesterday")
