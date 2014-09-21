@@ -38,13 +38,19 @@ for line in ingr:
 score = 0
     
 for x in range(0,8):
-    index = random.randint(0,12-x)
-    drinks = [rez2[random.randint(0,12-x)], rez2[index], rez2[random.randint(0,12-x)], rez2[random.randint(0,12-x)]]
+    y = False
+    while y == False :
+        index = random.randint(0,12-x)
+        ind1 = random.randint(0,12-x)
+        ind2 = random.randint(0,12-x)
+        ind3 = random.randint(0,12-x)
+        if ( (index != ind1) and (ind1 != ind2) and (ind2 != ind3) and (ind1 != ind3) and (index != ind2) and (index != ind3) ): y = True        
+    drinks = [rez2[ind1], rez2[index], rez2[ind2], rez2[ind3]]
     random.shuffle(drinks)
     for i in range(0,4):
         print(str(i+1) +  ". " + (drinks[i]))
-    guess = str(input("Guess the drink that contains these ingredients: " + rez[index]))
-    if (guess ==  rez2[index]): score = score + 1 and print ("You scored a point! Your score is now " + str(score))
+    guess = int(input("Type in the number of the drink that contains these ingredients: " + rez[index]))
+    if (guess - 1 ==  (drinks.index(rez2[index]))): print ("You scored a point! Your score is now " + str(score))
     else: print ("You got it wrong. Your score is " + str(score))
     rez2.remove(rez2[index])
     rez.remove(rez[index])
