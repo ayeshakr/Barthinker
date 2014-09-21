@@ -54,3 +54,16 @@ for x in range(0,8):
     else: print ("You got it wrong. Your score is " + str(score))
     rez2.remove(rez2[index])
     rez.remove(rez[index])
+
+    
+        
+
+        
+
+        
+
+
+
+        
+        
+
